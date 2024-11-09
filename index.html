@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/fa/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>InnovAR - Academy</title>
+</head>
+<body>
+    
+<!--ENCABEZADO DE PAGINA-->
+
+    <header>
+        <a href="#" class="logo">
+            <img class="logo-img" src="img/prueba.png" alt="logo de la compania">
+            <h2 class="logo-nombre">InnovAR - Academy</h2>
+        </a>
+<!--BARRA DE NAVEGACION-->
+
+        <nav class="nav-1">
+            <a class="nav-link" href="#">Inicio</a>
+            <a class="nav-link" href="#">Cursos</a>
+            <a class="nav-link" href="#">Contacto</a>
+        </nav>        
+    </header>
+
+<!--CONTENIDO DE PAGINA-->
+
+    <main class="contenido-pagina">
+        <section class="primera-seccion">
+            <h3>La Vida de los Desarrolladores</h3>
+            <div class="img-video">
+                <a href="cursos.html" class="friday-img2">
+                    <img class="friday-img" src="img/friday.jpg" alt="friday">
+                </a>
+                <iframe  class="video-iframe" src="https://www.youtube.com/embed/Rfd9fMj92H0" title="La Misteriosa Vida de los Desarrolladores | El Arte de la Programación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section class="sec-cursos">
+            <h2 class="nuestros-cursos">Nuestros Cursos</h2>
+            <div class="front">
+                <h4 class="titulo-cursos">Cursos Front-End</h4>
+                <a class="front-img" href="cursos.html">
+                    <img src="img/frontend.png" alt="">
+                </a>
+                <p>El desarrollo web sfront-end se refiere a la práctica de construir y diseñar la interfaz de usuario de un sitio web o aplicación. Esto implica trabajar con tecnologías del lado del cliente, como HTML, CSS y JavaScript, para crear páginas web interactivas y visualmente atractivas.</p>
+            </div>
+            <div class="back">
+                <h4>Cursos Back-End</h4>
+                <a href="cursos.html">
+                    <img src="img/program.png" alt="">
+                </a>
+                <p>el back end de la aplicación administra la funcionalidad general de la aplicación web. Cuando el usuario interactúa con el front end, la interacción envía una solicitud al back end en formato HTTP. El backend procesa la solicitud y devuelve una respuesta.</p>
+            </div>
+        </section>
+
+
+<!--FORMULARIO-->
+        <section class="formulario">
+            
+            <form class="form" action="Link" method="POST" target="_blank">
+                <h2 class="form__title">Formulario de Contacto</h2>
+                <p class="form__subtitle">Envianos tu consulta y te contactaremos a la brevedads</p>
+                <div class="form__inputs">
+                    <label class="form__label">
+                        <input type="text" placeholder=" " class="form__input">
+                        <span class="form__text">Ingresa tu Nombre</span>
+                    </label>
+                    <label class="form__label">
+                        <input type="mail" placeholder=" " class="form__input">
+                        <span class="form__text">Ingresa tu Correo</span>
+                    </label>
+                    <label class="form__label">
+                        <textarea placeholder=" " class="form__input" name="consulta" id="" cols="10" rows="5"></textarea>
+                        <span class="form__text">Ingresa tu Consulta</span>
+                    </label>
+                </div>
+                <input type="submit" value="Enviar" class="form__submit">
+            </form>
+        </section>
+    </main>
+
+
+<!--PIE DE PAGINA-->
+
+    <footer class="pie-pagina">
+        <div class="footer">
+            <ul class="social-icon">
+                <li class="icon-elem">
+                    <a class="icon" href="http://www.youtube.com">
+                    <i class="fa fa-youtube-play" aria-hidden="false"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a class="icon" href="http://www.facebook.com">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a class="icon" href="http://www.instagram.com">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="icon-elem">
+                    <a class="icon" href="http://www.whatsapp.com">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <span>&copy; 2020 - 2024, Todos los derechos reservados.</span>
+        </div>
+        
+    </footer>
+</body>
+</html>

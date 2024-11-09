@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* -------------- HEADER -------------- */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-size: 20px;
+    padding-right: 80px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+nav a:hover{
+    color: lightcoral;
+}
+
+/* -------------- MAIN --------------*/
+
+main{
+    padding-bottom: 10px;
+}
+
+.contenido-pagina{
+    background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+}
+
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+/* --------------  PRIMER SECTION (VIDEO Y OFERTA)--------------*/
+
+.primera.seccion{
+    display: flex;
+    width: 100%;
+ 
+}
+
+h3{
+    text-align: center;
+    color: lightblue;
+    font-size: 35px;
+    padding: 15px;
+}
+
+.img-video{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.friday-img {
+    height: 360px;
+    width: auto;
+    border-radius: 5%;
+}
+
+.video-iframe{
+    width: 640px;
+    height: 360px;
+}
+
+
+/* --------------  SEGUNDA SECTION (CURSOS) --------------*/
+
+.cursos{
+    display: flex;
+    background-color:white;
+}
+
+h2{
+    text-align: start;
+    padding: 30px;
+    color: lightblue;
+}
+
+/* --------------  FORMULARIO --------------*/
+
+.form{
+    display: block;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    width: min(350px, 90%);
+    border-radius: 10px;
+}
+
+.form__title{
+    font-size: 1.6rem;
+}
+
+.form__subtitle{
+    color: #9c9999;
+    margin-top: .7rem;
+}
+
+.form__inputs{
+    margin: 2rem 0 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    color: #6b6b6b; 
+}
+
+.form__label{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "input";
+}
+
+.form__input{
+    grid-area: input;
+    width: 100hw;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: .7rem 1.5rem;
+    color: #6b6b6b;
+}
+
+.form__text{
+    grid-area: input;
+    z-index: 100;
+    width: max-content;
+    height: 100%;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    display: flex;
+    align-items: center;
+    transform-origin: left center;
+    transition: transform .3s;
+}
+
+.form__input:is(:focus, :not(:placeholder-shown)) + .form__text{
+    background-color: white;
+    transform: translateY(-50%) scale(.7);
+    height: 40%;
+}
+
+.form__submit{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #0f41e1;
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.form__submit:hover{
+    background-color: #567aea;
+    cursor: pointer;
+    color:#000;
+}
+
+/* --------------  FOOTER --------------*/
+
+.pie-pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.footer{
+    font-size: 40px;
+}
+ul{
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    justify-content: space-around;
+    list-style: none;
+}
+
+i{
+    color: white;
+    transition: 0.5s;
+}
+
+i:hover{
+    transform: translateY(-20%);
+}
+
+footer span{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+/* --------------  SECTION CURSOS --------------*/
+
+.sec-cursos{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+
+.nuestros-cursos{
+    text-align: center;
+}
+
+.front{
+    border-color: #000;
+    border-radius: 60px;
+    background-color: white;
+    margin: 15px auto;
+    padding: 15px;
+    width: 50%;
+}
+
+.front-img{
+    border-radius: 80px;
+}
+
+
+.back{
+    border-color: 5px solid #000;
+    border-radius: 60px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    width: 50%;
+}
+
+
+@media (max-width: 2118px){
+    body{
+        align-items: center;
+        text-align: center  ;
+    }
+    h2{
+        font-size: 28px;
+    }
+    nav{
+        text-align:  center;
+    }
+    .friday-img{
+        padding: 10px 10px;
+        margin: 10px 10px;
+    }
+    .img-video{
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+        padding: 0 10px;
+    }
+
+
+}
